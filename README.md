@@ -57,7 +57,7 @@ Brainshell提供了无框常驻模式，目标是把AI融合到日常工作中�
 
 #### 全文阅读
 
-用于处理较长的文档，可以超过ChatGPT的token长度限
+用于处理较长的文档，可以超过ChatGPT的token长度限制
 
 ![](images/全文.gif)
 
@@ -132,8 +132,9 @@ params: # 除了stream和message/prompt不要传入，其他官网API支持的�
 system_message: "you are a help assistant" # 输入系统message
 ```
 
-注意model配置文件的文件名会被识别为标签名，所以不要有空格
-重启程序后，即可以在标签中选择该模型
+注意model配置文件的文件名会被识别为标签名，所以不要有空格。     
+     
+重启程序后，即可以在标签中选择该模型。
 
 ##### Engine 内置功能
 
