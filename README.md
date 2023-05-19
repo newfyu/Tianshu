@@ -1,10 +1,10 @@
-![](/Users/lhan/Projects/DeskBrain/images/logo.png)
+![](images/logo.png)
 
 ### 概述
 
 DeskBrain是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有许多奇奇怪怪的小功能。本地部署，需要OpenAI的key，支持Mac OS和Windows。
 
-![](/Users/lhan/Projects/DeskBrain/images/概述.gif)
+![](images/概述.gif)
 
 ### 特点
 
@@ -20,10 +20,10 @@ DeskBrain是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需�
 
 打包好的版本，开箱即用
 
-Mac OS：
+Mac OS：https://github.com/newfyu/DeskBrain/releases    
 Mac上如果提示什么文件损坏，安全权限问题，在“通用”-“隐私与安全”中打开。如果使用了本地知识库，读取本地文件时也会有权限提示。
 
-Windows：
+Windows(x64)：https://github.com/newfyu/DeskBrain/releases    
 
 (另外提供一个百度云的下载地址：链接: https://pan.baidu.com/s/1B1JYtURbM90u344-X2rQZA 提取码: 1234）
 
@@ -80,7 +80,7 @@ Brainshell提供了无框常驻模式，目标是把AI融合到日常工作中�
 
 使用斜杠选择，插入后会提供额外的功能，简称etag。etag有五种类型，“prompt",  "base",  "model",  "engine",  "agent"
 
-![](/Users/lhan/Projects/DeskBrain/images/翻译.gif)
+![](images/翻译.gif)
 
 ##### Prompt 提示词
 
