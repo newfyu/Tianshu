@@ -1,5 +1,3 @@
-
-
 ![](/Users/lhan/Projects/DeskBrain/images/logo.png)
 
 ### 概述
@@ -61,7 +59,7 @@ Brainshell提供了无框常驻模式，目标是把AI融合到日常工作中�
 
 用于处理较长的文档，可以超过ChatGPT的token长度限
 
-![](/Users/lhan/Projects/DeskBrain/images/全文.gif)
+![](images/全文.gif)
 
 有两种方式启用
 
@@ -116,7 +114,6 @@ template: |
 base文件是可以共享的，比如你用某些资料做了一个特定知识的聊天机器人，你把base文件复制给别人仍然是可以正常问答的，不必要再传到openai去向量化一次。
 
 需要重启程序才在标签列表中载入新建的base，另外，目前只支持插入一个本地知识库标签，插入多个只会使用最后一个。
-
 
 ![](images/base.gif)
 
