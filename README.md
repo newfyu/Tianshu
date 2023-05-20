@@ -25,7 +25,7 @@ Mac上如果提示什么文件损坏，安全权限问题，在“通用”-“�
 
 Windows(x64)：https://github.com/newfyu/DeskBrain/releases    
 
-(另外提供一个百度云的下载地址：链接: https://pan.baidu.com/s/1B1JYtURbM90u344-X2rQZA 提取码: 1234）
+(百度云下载地址：链接: https://pan.baidu.com/s/1B1JYtURbM90u344-X2rQZA 提取码: 1234）
 
 ###### 二、源码安装
 
@@ -78,9 +78,7 @@ Brainshell提供了无框常驻模式，目标是把AI融合到日常工作中�
 
 #### 扩展标签
 
-使用斜杠选择，插入后会提供额外的功能，简称etag。etag有五种类型，“prompt",  "base",  "model",  "engine",  "agent"
-
-![](images/翻译.gif)
+使用斜杠选择，插入后会提供额外的功能，简称etag。etag有五种类型，“prompt",  "base",  "model",  "engine",  "agent"     
 
 ##### Prompt 提示词
 
@@ -101,11 +99,13 @@ template: |
 
 需要重启程序才会载入新的prompt标签
 
+![](images/翻译.gif)    
+
 ##### Base 本地知识库
 
 本地知识库功能。插入base后，对话时将主要根据本地知识库中的内容来回答问题，用于构建特定领域的问答机器人。
 
-本地知识库需要预先创建，暂时只能使用braindoor的web界面来创建，以后再移植到brainshell上面。参考 https://github.com/newfyu/Braindoor/blob/main/doc/createhelp.md
+本地知识库需要预先创建，暂时只能使用braindoor的web界面来创建（浏览器访问：`127.0.0.1:7860`），下一版再移植到brainshell上面。创建本地知识库只需要指定本地文件夹路径和一些简单的参数设置，参考 https://github.com/newfyu/Braindoor/blob/main/doc/createhelp.md
 
 创建时它会将指定文件夹中的文件（可筛选txt, md，html, docx, pdf）按设定的大小（建议1000-2000）切片后再通过openai的text-ada-002模型向量化后存储到本地 `用户文件夹/braindoor/bases`文件夹。（会连接openai，有敏感信息的不要使用这个功能！）
 
