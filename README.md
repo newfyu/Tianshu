@@ -132,7 +132,7 @@ system_message: "you are a help assistant" # 输入系统message
 ```
 
 注意model配置文件的文件名会被识别为标签名，所以不要有空格。     
-     
+
 重启程序后，即可以在标签中选择该模型。
 
 ### Engine 内置功能
@@ -150,9 +150,13 @@ system_message: "you are a help assistant" # 输入系统message
 
 内置了二个基本Agent，主要是用于网络搜索改善回答的真实性
 
-google_search：插入该标签后，会生成搜索词然联网查询google的结果。这只是一个轻量级的联网搜索插件，此插件只会读取搜索结果的摘要，不会深入阅读网页。经过测试，对于回答一般的事实性问题是足够的了。等将来token充裕后，再加入深度搜索网页内容的agent。
+**google_search**：插入该标签后，会生成搜索词然联网查询google的结果。这只是一个轻量级的联网搜索插件，此插件只会读取搜索结果的摘要，不会深入阅读网页。经过测试，对于回答一般的事实性问题是足够的了。等将来token充裕后，再加入深度搜索网页内容的agent。
 
-wiki：插入该标签后，会查询wikipedia的结果后回答，和上面插件一样，会读取wikipedia提供的summary。
+![](images/gg.png)
+
+**wiki**：插入该标签后，会查询wikipedia的结果后回答，和上面插件一样，会读取wikipedia提供的summary。
+
+![](images/wiki.png)
 
 Agent可以方便的自己实现，只需要简单的python脚本，就能根据自己的需求自己编写任何和大语言模型结合的功能。python是调用的本地环境，没有任何限制，想做什么都可以。wiki插件中提供了详细的注释，可以参考实现自己的Agent。
 
