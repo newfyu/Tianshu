@@ -2,7 +2,7 @@
 
 ## 概述
 
-DeskBrain是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有许多奇奇怪怪的小功能。本地部署，需要OpenAI的key，支持Mac OS和Windows。
+DeskBrain是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，google联网等功能。本地部署，需要OpenAI的key，支持Mac OS和Windows。
 
 ![](images/概述.gif)
 
@@ -159,7 +159,7 @@ system_message: "you are a help assistant" # 输入系统message
 
 ![](images/wiki.png)
 
-Agent可以方便的自己实现，只需要简单的python脚本，就能根据自己的需求自己编写任何和大语言模型结合的功能。python是调用的本地环境，没有任何限制，想做什么都可以。wiki插件中提供了详细的注释，可以参考实现自己的Agent。
+Agent可以方便的自己实现，只需要简单的python脚本，就能根据自己的需求自己编写任何和大语言模型结合的功能。wiki插件中提供了详细的注释，可以参考实现自己的Agent。python是调用的本地环境，没有任何限制，想做什么都可以，如果你不害怕GPT删库跑路，甚至可以写脚本完全接管你的电脑。下一版再考虑内置一个现对安全的调用Applescript的agent和沙盒中运行的的Python REPL Agent。
 
 ## 其他配置
 
