@@ -2,7 +2,7 @@
 
 ## 概述
 
-DeskBrain是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，google联网等功能。本地部署，需要OpenAI的key，支持Mac OS和Windows。
+OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，google联网等功能。本地部署，需要OpenAI的key，支持MacOS和Windows。
 
 ![](images/概述.gif)
 
@@ -21,16 +21,16 @@ DeskBrain是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需�
 
 打包好的版本，开箱即用
 
-Mac OS：https://github.com/newfyu/DeskBrain/releases    
+Mac OS：https://github.com/newfyu/OpenCopilot/releases    
 Mac上如果提示什么文件损坏，安全权限问题，在“通用”-“隐私与安全”中打开。如果使用了本地知识库，读取本地文件时也会有权限提示。
 
-Windows(x64)：https://github.com/newfyu/DeskBrain/releases    
+Windows(x64)：https://github.com/newfyu/OpenCopilot/releases    
 
 (百度云下载地址：链接: https://pan.baidu.com/s/1B1JYtURbM90u344-X2rQZA 提取码: 1234）
 
 ### 二、源码安装
 
-DeskBrain由brainshell和braindoor两个项目打包而成。
+OpenCopilot由brainshell和braindoor两个项目打包而成。
 
 Braindoor主要用于快速构建chatgpt本地知识库，后来陆续增加了一些七七八八的小功能。具体安装方法参考： https://github.com/newfyu/Braindoor
 
