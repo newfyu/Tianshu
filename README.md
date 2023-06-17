@@ -1,5 +1,7 @@
 ![](images/logo.png)
 
+>最近更新，加入了gpt3.5-turbo-16k，用funciton call功能优化了google和wikipedia搜索插件   
+
 ## 概述
 
 OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，google联网等功能。本地部署，需要OpenAI的key，支持MacOS和Windows。
@@ -29,7 +31,7 @@ OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无�
 Mac OS：https://github.com/newfyu/OpenCopilot/releases    
 Mac上如果提示什么文件损坏，安全权限问题，在“通用”-“隐私与安全”中打开。如果使用了本地知识库，读取本地文件时也会有权限提示。
 
-Windows(x64)：https://github.com/newfyu/OpenCopilot/releases    
+Windows(基于python3.9，不支持win7)：https://github.com/newfyu/OpenCopilot/releases    
 
 (百度云下载地址：链接: https://pan.baidu.com/s/1B1JYtURbM90u344-X2rQZA 提取码: 1234）
 
@@ -141,7 +143,7 @@ base文件是可以共享的，比如你用某些资料做了一个特定知识�
 
 用于选择语言模型和调整语言模型的参数，目前只能选ChatGPT (gpt3.5-turbo) 和GPT3 (text-davinci-003)。后面版本再加入gpt4等（我没API啊😭）或本地部署的模型
 
-不插入任何模型标签，默认是一个温度0.8的chatgpt。但如果你需要一些特定参数chatgpt，比如调整温度，调整最大token数等，改变system message，只要是官方API的参数都可以传入。方法是在`用户文件夹\braindoor\models`中添加模型配置文件。每个文件是一个yaml文件，按下面格式写就可以了。
+不插入任何模型标签，默认是一个温度0.5的gpt-3.5-turbo-0613，输入超过4000token后会使用gpt-3.5-turbo-16k。 如果需要一些特定参数chatgpt，比如调整温度，调整最大token、改变system message等，只要是官方API的参数都可以传入。方法是在`用户文件夹\braindoor\models`中添加模型配置文件。每个文件是一个yaml文件，按下面格式写就可以了。
 
 ```yaml
 # chatgpt_t0p8.yaml
