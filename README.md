@@ -17,7 +17,8 @@ OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无�
 - 自定义prompt
 - 联网搜索插件
 - 本地对话历史查询  
-- 执行本地脚本（如python，applescript）
+- 生成并执行本地python脚本
+- 控制本地系统（通过applescript/vbscript插件）
 
 ## 安装
 
