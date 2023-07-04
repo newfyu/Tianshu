@@ -4,7 +4,7 @@
 
 ## 概述
 
-OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，联网搜索，执行脚本等功能。本地部署。需要OpenAI的key，支持MacOS和Windows。
+OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，联网搜索，操控本地系统等功能。本地部署。需要OpenAI的key，支持MacOS和Windows。
 
 ![](images/概述.gif)
 
@@ -153,11 +153,11 @@ system_message: "you are a help assistant" # 输入系统message
 - /ReadTop3：和本地知识库配合使用，增加本地知识库阅读深度。使用本地仓库时，默认只根据相似度最高的片段作为上下文，插入该标签后，会使用相似度最高的前3个片段作为依据，然后用分块阅读来解答问题，会增加token消耗，但提高查询准确率。
 - /ReadTop5：同上，会使用相似度最高的5个片段
 - /Memo：备忘录，插入这个标签后，输入后不会经过LLM，直接就输出你输入的内容。有人说，这不扯淡吗。其实就是用来记录一下笔记，当个桌面便签。支持markdown。
-- /File: 文件上传插件，插入此标签后，拖拽任意文件到对话框，可以获得文件的路径。并加入上下文，一般用于通过对话生成脚本来处理文件。
+- /File: 文件插件，插入此标签后，拖拽任意文件到对话框，可以获得文件的路径。并加入上下文，一般用于通过对话生成代码来处理文件。
 
 ### Agent 插件和智能体
 
-用于把本地python和llm结合起来执行任意的自动化操作。使用python即可轻松编写可扩展的插件和智能体
+执行任意的自动化操作
 
 内置了几个个基本Agent作为范例
 
@@ -177,7 +177,7 @@ system_message: "you are a help assistant" # 输入系统message
 
 
 
-**/autotag** ：自动选择标签的插件。前面功能中都需要手动插入标签，比如要在google中搜索就需要插入`#google`标签，在evernote中搜索要插入`#evernote`标签。使用autotag标签后，可以不用手动插入标签。会自动根据输入内容在agent和base中选择一个合适的标签，比如输入“xxx的新闻”，一般会自动调用google插件。“使用python写一个xxxx”，会自动使用python插件。
+**/autotag** ：自动选择标签的插件。前面功能中都需要手动插入标签，比如要在google中搜索就需要插入`#google`标签，在evernote中搜索要插入`#evernote`标签。使用autotag标签后，可以不用在输入内容时候声明使用什么，比如输入“使用google搜索xxx的新闻”，会调用google插件。“使用python写一个xxxx”，会自动使用python插件。
 
 ![](images/autotag.png)
 
