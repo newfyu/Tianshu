@@ -132,9 +132,9 @@ base文件是可以共享的，比如你用某些资料做了一个特定知识�
 
 ### Model 模型选择
 
-用于选择语言模型和调整语言模型的参数，目前只能选ChatGPT (gpt3.5-turbo) 和GPT3 (text-davinci-003)。后面版本再加入gpt4等（我没API啊😭）或本地部署的模型
+用于选择语言模型和调整语言模型的参数。内置了比如chatgpt,chatgpt-16k,gpt3,gpt4等。（gpt4需要你本身key有权限才行）
 
-不插入任何模型标签，默认是一个温度0.5的gpt-3.5-turbo-0613，输入超过4000token后会使用gpt-3.5-turbo-16k。 如果需要一些特定参数chatgpt，比如调整温度，调整最大token、改变system message等，方法是在`用户文件夹\braindoor\models`中添加模型配置文件。每个文件是一个yaml文件，按下面格式写就可以了。只要是官方API的参数都可以传入。
+不插入任何模型标签，默认是一个温度0.5的gpt-3.5-turbo-0613，输入超过4000token后会使用gpt-3.5-turbo-16k。 如果需要一些定制特定参数chatgpt，比如调整温度，调整最大token、改变system message等，方法是在`用户文件夹\braindoor\models`中添加模型配置文件。每个文件是一个yaml文件，按下面格式写就可以了。只要是官方API的参数都可以传入。
 
 ```yaml
 # chatgpt_t0p8.yaml
