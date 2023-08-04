@@ -5,7 +5,7 @@
 
 ## 概述
 
-OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，联网搜索，操控本地系统等功能。本地部署。需要OpenAI的key，支持MacOS和Windows。
+OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，联网搜索，操控本地系统等功能。本地部署。需要OpenAI的官方key或其他第三方gpt转发服务的key。支持MacOS和Windows。
 
 ![](images/概述.gif)
 
