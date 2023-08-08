@@ -1,8 +1,5 @@
 ![](images/logo.png)
 
-> 最近更新：
-> - 增加了反向代理的设置，在设置-反向代理中可以输入反向代理地址：比如https://api.openai-proxy.com。 api2d的也可以用，方便国内用户。原来的代理设置改名为正向代理。
-
 ## 概述
 
 OpenCopilot是一个可以常驻桌面随时使用ChatGPT的桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有诸如本地知识库，联网搜索，操控本地系统等功能。本地部署。需要OpenAI的官方key或其他第三方gpt转发服务的key。支持MacOS和Windows。
@@ -133,13 +130,12 @@ base文件是可以共享的，比如你用某些资料做了一个特定知识�
 
 ### 模型标签
 
-用于选择语言模型和调整语言模型的参数。内置了比如chatgpt, chatgpt-16k, gpt3, gpt4等。（gpt4需要你本身key有权限才行）
+用于选择语言模型和调整语言模型的参数。内置了比如gpt3.5-turbo，gpt3.5-turbo-16k, gpt4等。（gpt4需要你本身key有权限才行）
 
 不插入任何模型标签，默认是一个温度0.5的gpt-3.5-turbo-0613，输入超过4000token后会使用gpt-3.5-turbo-16k。 如果需要一些定制特定参数chatgpt，比如调整温度，调整最大token、改变system message等，方法是在`用户文件夹\braindoor\models`中添加模型配置文件。每个文件是一个yaml文件，按下面格式写就可以了。只要是官方API的参数都可以传入。
 
 ```yaml
-# chatgpt_t0p8.yaml
-model: chatgpt # 可以填chatgpt或gpt3
+api: openai # 目前只能填openai
 params: # 除了stream和message/prompt不要传入，其他官网API支持的参数都可以传入来调整模型
     max_tokens: 1500
     temperature: 0.8
@@ -179,8 +175,6 @@ system_message: "you are a help assistant" # 输入系统message
 ![](images/py.png)
 
 **/applescirpt** 或 **/vbscript**: 可以生成applescript或vbscript并执行，可以通过对话完成各种对mac os或windows的操控。比如“创建文件”，“添加一个待办事项”，给“xxx@ss.com发送一个邮件，标题是xx，内容是xx”，或是一系列自动化操作。chatgpt写此类script偶有出错，等有gpt4接口后会好很多。操作office也是可以的，可以自己研究下vbscript
-
-
 
 **/autotag** ：自动选择标签的插件。前面功能中都需要手动插入标签，比如要在google中搜索就需要插入`#google`标签，在evernote中搜索要插入`#evernote`标签。使用autotag标签后，可以不用在输入内容时候声明使用什么，比如输入“使用google搜索xxx的新闻”，会调用google插件。“使用python写一个xxxx”，会自动使用python插件。
 
