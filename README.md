@@ -6,7 +6,7 @@
 
 ## 概述
 
-OpenCopilot是一个可以常驻桌面随时使用ChatGPT的跨平台桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有本地知识库，联网搜索，操控本地系统等功能。需要OpenAI的官方key或其他第三方gpt转发服务的key。
+Tianshu(天书)是一个可以常驻桌面随时使用ChatGPT的跨平台应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有本地知识库，联网搜索，操控本地系统等功能。需要OpenAI的官方key或其他第三方gpt转发服务的key。
 
 [帮助文档](http://opencopilot.rtfd.io)
 
@@ -36,7 +36,7 @@ MacOS下载dmg后缀的安装包, Windows下载exe后缀的安装包。
 
 Mac上如果提示什么文件损坏，安全权限问题，在“通用”-“隐私与安全”中打开。
 
-本仓库不提供源码，OpenCopilot由[Brainshell](https://github.com/newfyu/Brainshell)和[Braindoor](https://github.com/newfyu/Braindoor)两个项目打包而成。源码可以去各自的仓库查看。
+本仓库不提供源码，Tianshu由[Brainshell](https://github.com/newfyu/Brainshell)和[Braindoor](https://github.com/newfyu/Braindoor)两个项目打包而成。源码可以去各自的仓库查看。
 
 
 ## 配置
