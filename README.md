@@ -1,12 +1,11 @@
-![](images/logo.png)
+![](docs/images/logo.png)
 
-
-> v0.5.0更新：增加了全局Chat功能，可以在系统任何地方调出输入窗口，并对选中的文字内容发起对话。默认快捷键`Option/Alt + C`.   
-> v0.6.0更新：增加WebChat，嵌入了网页版的ChatGPT，Claude和Bing，可以在软件内部直接调用。详见[WebChat](docs/WebChat.md)
+> v0.6.1更新：改名天书，增加了检查更新功能，可以自动下载更新了
 
 ## 概述
 
-OpenCopilot是一个可以常驻桌面随时使用ChatGPT的跨平台桌面应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有本地知识库，联网搜索，操控本地系统等功能。需要OpenAI的官方key或其他第三方gpt转发服务的key。
+
+Tianshu(天书)是一个可以常驻桌面随时使用ChatGPT的跨平台应用。无需打开网页或切换窗口，随时随地在你的工作流中和AI聊天。还有本地知识库，联网搜索，操控本地系统等功能。需要OpenAI的官方key或其他第三方gpt转发服务的key。
 
 [帮助文档](http://opencopilot.rtfd.io)
 
@@ -31,12 +30,12 @@ OpenCopilot是一个可以常驻桌面随时使用ChatGPT的跨平台桌面应�
 
 MacOS下载dmg后缀的安装包, Windows下载exe后缀的安装包。
 
-- GitHub下载地址：[https://github.com/newfyu/OpenCopilot/releases](https://github.com/newfyu/OpenCopilot/releases)
+- GitHub下载地址：[https://github.com/newfyu/Tianshu/releases](https://github.com/newfyu/Tianshu/releases)
 - 百度盘下载地址：[https://pan.baidu.com/s/1B1JYtURbM90u344-X2rQZA](https://pan.baidu.com/s/1B1JYtURbM90u344-X2rQZA) 提取码: 1234
 
 Mac上如果提示什么文件损坏，安全权限问题，在“通用”-“隐私与安全”中打开。
 
-本仓库不提供源码，OpenCopilot由[Brainshell](https://github.com/newfyu/Brainshell)和[Braindoor](https://github.com/newfyu/Braindoor)两个项目打包而成。源码可以去各自的仓库查看。
+本仓库不提供源码，Tianshu由[Brainshell](https://github.com/newfyu/Brainshell)和[Braindoor](https://github.com/newfyu/Braindoor)两个项目打包而成。源码可以去各自的仓库查看。
 
 
 ## 配置

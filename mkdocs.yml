@@ -1,8 +1,8 @@
-site_name: OpenCopilot
+site_name: Tianshu
 theme: readthedocs
 nav:
   - '开始使用':
-    - '简介': 'README.md'
+    - '简介': 'overview.md'
     - '安装和配置': '安装和配置.md'
     - '常规使用和快捷键': '常规使用和快捷键.md'
     - '全局Chat': '全局Chat.md'
